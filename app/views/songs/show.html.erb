@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @song.name %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @song.artist %>
+</p>
+
+<p>
+  <strong>Lyrics:</strong>
+  <%= @song.lyrics.gsub(/[^a-zA-Z\s]/, "") %>
+</p>
+
+<p>
+
+<% @song.wordchecker.each do |word| %>
+  <p><b><%= word[0] %>:</b> <%= word[-1] %></p>
+<% end %>
+
+
+</p>
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>
