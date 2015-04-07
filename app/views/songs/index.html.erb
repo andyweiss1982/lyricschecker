@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Date</th>
       <th>Name</th>
       <th>Artist</th>
       <th>Total</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @songs.each do |song| %>
       <tr>
+        <td><%= song.date %></td>
         <td><%= song.name %></td>
         <td><%= song.artist %></td>
         <td><%= song.wordchecker[-1].pop %></td>
