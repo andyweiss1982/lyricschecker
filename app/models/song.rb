@@ -1,6 +1,6 @@
 class Song < ActiveRecord::Base
   
-  TARGET_WORDS = ["bad", "answer", "world"]
+  TARGET_WORDS = ["bad", "answer", "world", "know"]
 
   def wordchecker
     target_words = []
@@ -24,5 +24,5 @@ class Song < ActiveRecord::Base
     target_words << ["total", total_counter]
     target_words
   end
-  
+
 end
