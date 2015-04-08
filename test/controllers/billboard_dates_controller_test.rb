@@ -18,7 +18,7 @@ class BillboardDatesControllerTest < ActionController::TestCase
 
   test "should create billboard_date" do
     assert_difference('BillboardDate.count') do
-      post :create, billboard_date: { date: @billboard_date.date }
+      post :create, billboard_date: { day: @billboard_date.day }
     end
 
     assert_redirected_to billboard_date_path(assigns(:billboard_date))
@@ -35,7 +35,7 @@ class BillboardDatesControllerTest < ActionController::TestCase
   end
 
   test "should update billboard_date" do
-    patch :update, id: @billboard_date, billboard_date: { date: @billboard_date.date }
+    patch :update, id: @billboard_date, billboard_date: { day: @billboard_date.day }
     assert_redirected_to billboard_date_path(assigns(:billboard_date))
   end
 

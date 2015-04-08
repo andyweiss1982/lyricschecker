@@ -1,7 +1,7 @@
 class CreateBillboardDates < ActiveRecord::Migration
   def change
     create_table :billboard_dates do |t|
-      t.string :date
+      t.string :day
 
       t.timestamps null: false
     end

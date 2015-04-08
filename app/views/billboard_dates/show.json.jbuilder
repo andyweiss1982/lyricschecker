@@ -1,1 +1,1 @@
-json.extract! @billboard_date, :id, :date, :created_at, :updated_at
+json.extract! @billboard_date, :id, :day, :created_at, :updated_at

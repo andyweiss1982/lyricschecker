@@ -69,6 +69,6 @@ class BillboardDatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def billboard_date_params
-      params.require(:billboard_date).permit(:date)
+      params.require(:billboard_date).permit(:day)
     end
 end
