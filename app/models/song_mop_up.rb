@@ -1,8 +1,16 @@
-class SongImporter
+class SongMopUp
   require 'nokogiri'
   require 'open-uri'
 
+  do_overs = []
+
   BillboardDate.all.each do |bbd|
+    if bbd.songs.count < 1
+      do_overs << bbd
+    end
+  end
+
+  do_overs.each do |bbd|
 
     date_string = bbd.day
 
@@ -25,8 +33,8 @@ class SongImporter
       puts "==================================================="
     
     end
-
+    
     sleep 2
-  
+
   end
 end

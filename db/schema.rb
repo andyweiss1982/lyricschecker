@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150407232944) do
+ActiveRecord::Schema.define(version: 20150408032241) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,11 +24,15 @@ ActiveRecord::Schema.define(version: 20150407232944) do
 
   create_table "songs", force: :cascade do |t|
     t.text     "lyrics"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.string   "name"
     t.string   "artist"
     t.string   "date"
+    t.integer  "billboard_date_id"
   end
 
+  add_index "songs", ["billboard_date_id"], name: "index_songs_on_billboard_date_id", using: :btree
+
+  add_foreign_key "songs", "billboard_dates"
 end
