@@ -1,5 +1,5 @@
 class DateCreater
-  Date.create(2014,4,4)
+  BillboardDate.create(day: '2015-04-04')
   1560.times do
     d = BillboardDate.last
     a = (d.day.to_date - 7.days).to_s
