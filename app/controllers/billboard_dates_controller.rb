@@ -4,7 +4,7 @@ class BillboardDatesController < ApplicationController
   # GET /billboard_dates
   # GET /billboard_dates.json
   def index
-    @billboard_dates = BillboardDate.all
+    @billboard_dates = BillboardDate.paginate(:page => params[:page])
   end
 
   # GET /billboard_dates/1

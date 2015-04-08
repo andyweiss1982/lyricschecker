@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'will_paginate'
 # gem 'httparty'
 gem 'nokogiri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
