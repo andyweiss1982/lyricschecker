@@ -16,17 +16,15 @@ class SongImporter
     number_1_song = doc.at_css('#row-1 > div.row-primary > div.row-title > h2').text.lstrip.rstrip
     number_1_artist = doc.at_css('#row-1 > div.row-primary > div.row-title > h3 > a').text.lstrip.rstrip
 
-    Song.create(name: number_1_song, artist: number_1_artist, date: date_string, billboard_id: bbd.id)
+    Song.create(name: number_1_song, artist: number_1_artist, date: date_string, billboard_date_id: bbd.id)
     
     rescue
 
       puts "==================================================="
-      puts "#{date_string} BAD GATEWAY BillboardDate.#{bbd.id}"
+      puts "#{date_string} BillboardDate.#{bbd.id}"
       puts "==================================================="
     
     end
-
-    sleep 2
   
   end
 end
