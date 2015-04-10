@@ -14,7 +14,7 @@ class SongImporter
     
     doc = Nokogiri::HTML(open(search_url))  
     number_1_song = doc.at_css('#row-1 > div.row-primary > div.row-title > h2').text.lstrip.rstrip
-    number_1_artist = doc.at_css('#row-1 > div.row-primary > div.row-title > h3 > a').text.lstrip.rstrip
+    number_1_artist = doc.at_css('#row-1 > div.row-primary > div.row-title > h3').text.lstrip.rstrip
 
     Song.create(name: number_1_song, artist: number_1_artist, date: date_string, billboard_date_id: bbd.id)
     
