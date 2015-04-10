@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+
+gem "rapgenius", "~> 1.0.5"
 gem 'will_paginate'
 # gem 'httparty'
 gem 'nokogiri'
