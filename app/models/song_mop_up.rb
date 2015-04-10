@@ -1,4 +1,4 @@
-# class SongMopUp
+class SongMopUp
 #   require 'nokogiri'
 #   require 'open-uri'
 
@@ -39,4 +39,4 @@
 #     sleep 2
 
 #   end
-# end
+end

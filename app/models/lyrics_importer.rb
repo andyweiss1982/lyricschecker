@@ -1,4 +1,4 @@
-# class LyricsImporter
+class LyricsImporter
 #   require 'rapgenius'
 
 #   Song.all.each do |song|
@@ -20,4 +20,4 @@
 
 #   end
 
-# end
+end

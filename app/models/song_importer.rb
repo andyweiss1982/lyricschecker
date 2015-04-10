@@ -1,4 +1,4 @@
-# class SongImporter
+class SongImporter
 #   require 'nokogiri'
 #   require 'open-uri'
 
@@ -27,4 +27,4 @@
 #     end
   
 #   end
-# end
+end
