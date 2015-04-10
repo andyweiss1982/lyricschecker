@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :billboard_dates
-
   resources :songs
   root 'songs#new'
 
