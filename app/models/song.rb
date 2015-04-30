@@ -1,7 +1,7 @@
 class Song < ActiveRecord::Base
   belongs_to :billboard_date
 
-  TARGET_WORDS = ["bad", "answer", "world", "know"]
+  TARGET_WORDS = ["murder", "hate", "fuck", "slit", "choke", "shoot", "pussy", "bitch", "stab", "hang"]
 
   def wordchecker
     target_words = []
