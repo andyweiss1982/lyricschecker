@@ -10,6 +10,16 @@
       <th>Date</th>
       <th>Name</th>
       <th>Artist</th>
+      <th>Murder</th>
+      <th>Shoot</th>
+      <th>Stab</th>
+      <th>Kill</th>
+      <th>Steal</th>
+      <th>Rape</th>
+      <th>Thug</th>
+      <th>Trigger</th>
+      <th>Gang</th>
+      <th>Gun</th>
       <th>Total</th>
       <th colspan="3"></th>
     </tr>
@@ -21,7 +31,17 @@
         <td><%= song.date %></td>
         <td><%= song.name %></td>
         <td><%= song.artist %></td>
-        <td><%#= song.wordchecker[-1].pop %></td>
+        <td><%= song.wordchecher[0][-1] %></td>
+        <td><%= song.wordchecher[1][-1] %></td>
+        <td><%= song.wordchecher[2][-1] %></td>
+        <td><%= song.wordchecher[3][-1] %></td>
+        <td><%= song.wordchecher[4][-1] %></td>
+        <td><%= song.wordchecher[5][-1] %></td>
+        <td><%= song.wordchecher[6][-1] %></td>
+        <td><%= song.wordchecher[7][-1] %></td>
+        <td><%= song.wordchecher[8][-1] %></td>
+        <td><%= song.wordchecher[9][-1] %></td>
+        <td><%= song.wordchecher[10][-1] %></td>
         <td><%= link_to 'Show', song %></td>
         <td><%= link_to 'Edit', edit_song_path(song) %></td>
         <td><%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -34,3 +54,4 @@
 
 <%= link_to 'New Song', new_song_path %>
 <%= link_to 'All Billboard Dates', billboard_dates_path %>
+<!-- ["murder", "shoot", "stab", "kill", "steal", "rape", "thug", "trigger", "gang", "gun"] -->
