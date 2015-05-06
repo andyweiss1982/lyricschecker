@@ -7,6 +7,10 @@ class SongsController < ApplicationController
     @songs = Song.order(date: :desc).paginate(:page => params[:page])
   end
 
+  def total
+    @songs = Song.order(date: :desc)
+  end
+
   # GET /songs/1
   # GET /songs/1.json
   def show
