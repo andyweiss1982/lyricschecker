@@ -15,7 +15,7 @@ class Song < ActiveRecord::Base
 
     no_punctuation.split.each do |song_word|
       target_words.each do |target_word|
-        if song_word.downcase.include?(target_word[0].downcase)
+        if song_word.downcase == target_word[0].downcase
           total_counter +=1
           target_word[-1] +=1
         end
