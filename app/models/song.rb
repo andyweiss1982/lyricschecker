@@ -23,7 +23,7 @@ class Song < ActiveRecord::Base
     end
   
     target_words << ["total", total_counter]
-    target_words
+    target_words  
   end
 
 end
