@@ -1,5 +1,6 @@
 class Song < ActiveRecord::Base
   belongs_to :billboard_date
+  before_save :update_year
 
   TARGET_WORDS = ["murder", "shoot", "stab", "kill", "steal", "rape", "thug", "trigger", "gang", "gun"]
 
@@ -24,6 +25,11 @@ class Song < ActiveRecord::Base
   
     target_words << ["total", total_counter]
     target_words  
+  end
+
+  def update_year
+    self.year = date.split('-').first.to_i
+    self.save
   end
 
 end
