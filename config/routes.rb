@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :billboard_dates
   resources :songs
 
-  root 'year_objs#index'
+  root 'year_objs#graph'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
