@@ -29,7 +29,6 @@ class Song < ActiveRecord::Base
 
   def update_year
     self.year = date.split('-').first.to_i
-    self.save
   end
 
 end
