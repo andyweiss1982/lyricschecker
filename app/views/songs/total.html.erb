@@ -1,1 +1,68 @@
-<p>total</p>
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Murder</th>
+      <th>Shoot</th>
+      <th>Stab</th>
+      <th>Kill</th>
+      <th>Steal</th>
+      <th>Rape</th>
+      <th>Thug</th>
+      <th>Trigger</th>
+      <th>Gang</th>
+      <th>Gun</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% year_num = 1985 %>
+
+    <%[@1985_songs, @1986_songs, @1987_songs, @1988_songs, @1989_songs, @1990_songs, @1991_songs, @1992_songs, @1993_songs, @1994_songs, @1995_songs, @1996_songs, @1997_songs, @1998_songs, @1999_songs, @2000_songs, @2001_songs, @2002_songs, @2003_songs, @2004_songs, @2005_songs, @2006_songs, @2007_songs, @2008_songs, @2009_songs, @2010_songs, @2011_songs, @2012_songs, @2013_songs, @2014_songs, @2015_songs].each do |year|%>
+      <tr>
+        <td><%= year_num.to_s %></td>
+        
+        <% year_num += 1 %>
+        
+        <% murder_count = 0 %>
+        <% shoot_count = 0 %>
+        <% stab_count = 0 %>
+        <% kill_count = 0 %>
+        <% steal_count = 0 %>
+        <% rape_count = 0 %>
+        <% thug_count = 0 %>
+        <% trigger_count = 0 %>
+        <% gang_count = 0 %>
+        <% gun_count = 0 %>
+        <% total_count = 0 %>
+
+        <% year.each do song %>
+          <% murder_count += song.wordchecker[0][-1] %>
+          <% shoot_count += song.wordchecker[1][-1] %>
+          <% stab_count += song.wordchecker[2][-1] %>
+          <% kill_count += song.wordchecker[3][-1] %>
+          <% steal_count += song.wordchecker[4][-1] %>
+          <% rape_count += song.wordchecker[5][-1] %>
+          <% thug_count += song.wordchecker[6][-1] %>
+          <% trigger_count += song.wordchecker[7][-1] %>
+          <% gang_count += song.wordchecker[8][-1] %>
+          <% gun_count += song.wordchecker[9][-1] %>
+          <% total_count += song.wordchecker[10][-1] %>
+        <% end %>
+        
+        <td><%= murder_count %></td>
+        <td><%= shoot_count %></td>
+        <td><%= stab_count %></td>
+        <td><%= kill_count %></td>
+        <td><%= steal_count %></td>
+        <td><%= rape_count %></td>
+        <td><%= thug_count %></td>
+        <td><%= trigger_count %></td>
+        <td><%= gang_count %></td>
+        <td><%= gun_count %></td>
+        <td><%= total_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
