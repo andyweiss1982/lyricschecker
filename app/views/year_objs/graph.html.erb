@@ -1,10 +1,10 @@
-<h3>Total WordCount BY Year</h3>
+<h3>Total Word Count By Year</h3>
 <%= link_to 'Table View', year_objs_path %>
 
 <% @year_objs.each do |year_obj| %>
 
   <p><b><%=year_obj.num %>:</b>
   <% year_obj.total.times do %>|<% end %>
-  </p>
+  (<%= year_obj.total %>)</p>
   
 <% end %>
