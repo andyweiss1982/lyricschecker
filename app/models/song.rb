@@ -26,8 +26,4 @@ class Song < ActiveRecord::Base
     target_words  
   end
 
-  def year
-    self.date.split('-').first.to_i
-  end
-
 end
