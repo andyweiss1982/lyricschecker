@@ -1,0 +1,11 @@
+<% @year_objs.each do |year_obj| %>
+
+  <p><b>year_obj.num:</b>
+  <% year_object.total.times do |symbol| %>
+    |
+  <% end %>
+  </p>
+  
+<% end %>
+
+<%= link_to 'Table View', year_objs_path %>

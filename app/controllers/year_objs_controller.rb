@@ -7,6 +7,10 @@ class YearObjsController < ApplicationController
     @year_objs = YearObj.all
   end
 
+  def graph
+    @year_objs = YearObj.all
+  end
+
   # GET /year_objs/1
   # GET /year_objs/1.json
   def show

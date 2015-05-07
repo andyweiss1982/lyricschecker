@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :year_objs
+  resources :year_objs do
+    collection do
+      get 'graph'
+    end
+  end
   resources :billboard_dates
   resources :songs
 
