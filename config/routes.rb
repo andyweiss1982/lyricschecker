@@ -1,15 +1,7 @@
 Rails.application.routes.draw do
   resources :year_objs
-
   resources :billboard_dates
-  resources :songs do 
-    collection do
-      get 'total'
-      get 'first_decade'
-      get 'second_decade'
-      get 'third_decade'
-    end
-  end
+  resources :songs
 
   root 'songs#new'
 

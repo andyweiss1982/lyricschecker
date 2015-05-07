@@ -5,8 +5,18 @@
 <table>
   <thead>
     <tr>
-      <th>Num</th>
-      <th colspan="3"></th>
+      <th>Year</th>
+      <th>Murder</th>
+      <th>Shoot</th>
+      <th>Stab</th>
+      <th>Kill</th>
+      <th>Steal</th>
+      <th>Rape</th>
+      <th>Thug</th>
+      <th>Trigger</th>
+      <th>Gang</th>
+      <th>Gun</th>
+      <th>Total</th>
     </tr>
   </thead>
 
@@ -14,14 +24,18 @@
     <% @year_objs.each do |year_obj| %>
       <tr>
         <td><%= year_obj.num %></td>
-        <td><%= link_to 'Show', year_obj %></td>
-        <td><%= link_to 'Edit', edit_year_obj_path(year_obj) %></td>
-        <td><%= link_to 'Destroy', year_obj, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= year_obj.murder %></td>
+        <td><%= year_obj.shoot %></td>
+        <td><%= year_obj.stab %></td>
+        <td><%= year_obj.kill %></td>
+        <td><%= year_obj.steal %></td>
+        <td><%= year_obj.rape %></td>
+        <td><%= year_obj.thug %></td>
+        <td><%= year_obj.trigger %></td>
+        <td><%= year_obj.gang %></td>
+        <td><%= year_obj.gun %></td>
+        <td><%= year_obj.total %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Year obj', new_year_obj_path %>
