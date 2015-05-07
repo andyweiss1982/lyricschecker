@@ -37,7 +37,7 @@
         <% gun_count = 0 %>
         <% total_count = 0 %>
 
-        <% year.each do song %>
+        <% year.each do |song| %>
           <% murder_count += song.wordchecker[0][-1].to_i %>
           <% shoot_count += song.wordchecker[1][-1].to_i %>
           <% stab_count += song.wordchecker[2][-1].to_i %>
