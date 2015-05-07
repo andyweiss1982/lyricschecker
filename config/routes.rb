@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :songs do 
     collection do
       get 'total'
+      get 'first_decade'
+      get 'second_decade'
+      get 'third_decade'
     end
   end
 
