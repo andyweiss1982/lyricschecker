@@ -1,9 +1,7 @@
 <% @year_objs.each do |year_obj| %>
 
-  <p><b>year_obj.num:</b>
-  <% year_object.total.times do |symbol| %>
-    |
-  <% end %>
+  <p><b><%=year_obj.num %>:</b>
+  <% year_obj.total.times do %>|<% end %>
   </p>
   
 <% end %>
