@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507043436) do
+ActiveRecord::Schema.define(version: 20150507044926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,17 @@ ActiveRecord::Schema.define(version: 20150507043436) do
     t.integer  "num"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "murder"
+    t.integer  "stab"
+    t.integer  "kill"
+    t.integer  "steal"
+    t.integer  "rape"
+    t.integer  "thug"
+    t.integer  "trigger"
+    t.integer  "gang"
+    t.integer  "gun"
+    t.integer  "total"
+    t.integer  "shoot"
   end
 
   add_foreign_key "songs", "billboard_dates"
