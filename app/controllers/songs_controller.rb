@@ -44,95 +44,65 @@ class SongsController < ApplicationController
     @songs.all.each do |song|
       if song.year == 1985
         @songs_1985 << song
-      end
-      if song.year == 1986
+      elsif song.year == 1986
         @songs_1986 << song
-      end
-      if song.year == 1987
+      elsif song.year == 1987
         @songs_1987 << song
-      end
-      if song.year == 1988
+      elsif song.year == 1988
         @songs_1988 << song
-      end
-      if song.year == 1989
+      elsif song.year == 1989
         @songs_1989 << song
-      end
-      if song.year == 1990
+      elsif song.year == 1990
         @songs_1990 << song
-      end
-      if song.year == 1991
+      elsif song.year == 1991
         @songs_1991 << song
-      end
-      if song.year == 1992
+      elsif song.year == 1992
         @songs_1992 << song
-      end
-      if song.year == 1993
+      elsif song.year == 1993
         @songs_1993 << song
-      end
-      if song.year == 1994
+      elsif song.year == 1994
         @songs_1994 << song
-      end
-      if song.year == 1995
+      elsif song.year == 1995
         @songs_1995 << song
-      end
-      if song.year == 1996
+      elsif song.year == 1996
         @songs_1996 << song
-      end
-      if song.year == 1997
+      elsif song.year == 1997
         @songs_1997 << song
-      end
-      if song.year == 1998
+      elsif song.year == 1998
         @songs_1998 << song
-      end
-      if song.year == 1999
+      elsif song.year == 1999
         @songs_1999 << song
-      end
-      if song.year == 2000
+      elsif song.year == 2000
         @songs_2000 << song
-      end
-      if song.year == 2001
+      elsif song.year == 2001
         @songs_2001 << song
-      end
-      if song.year == 2002
+      elsif song.year == 2002
         @songs_2002 << song
-      end
-      if song.year == 2003
+      elsif song.year == 2003
         @songs_2003 << song
-      end
-      if song.year == 2004
+      elsif song.year == 2004
         @songs_2004 << song
-      end
-      if song.year == 2005
+      elsif song.year == 2005
         @songs_2005 << song
-      end
-      if song.year == 2006
+      elsif song.year == 2006
         @songs_2006 << song
-      end
-      if song.year == 2007
+      elsif song.year == 2007
         @songs_2007 << song
-      end
-      if song.year == 2008
+      elsif song.year == 2008
         @songs_2008 << song
-      end
-      if song.year == 2009
+      elsif song.year == 2009
         @songs_2009 << song
-      end
-      if song.year == 2010
+      elsif song.year == 2010
         @songs_2010 << song
-      end
-      if song.year == 2011
+      elsif song.year == 2011
         @songs_2011 << song
-      end
-      if song.year == 2012
+      elsif song.year == 2012
         @songs_2012 << song
-      end
-      if song.year == 2013
+      elsif song.year == 2013
         @songs_2013 << song
-      end
-      if song.year == 2014
+      elsif song.year == 2014
         @songs_2014 << song
-      end
-      if song.year == 2015
+      elsif song.year == 2015
         @songs_2015 << song
       end
     end
