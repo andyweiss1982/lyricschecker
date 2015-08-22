@@ -1,6 +1,11 @@
 == README
-Raheem, visit this link: http://immense-wave-8495.herokuapp.com/
+
+Raheem, visit this link: http://lyricschecker.herokuapp.com/
 
 Has your total wordcount by year for the #1 hiphop song in the country.
 
 Click tableview for disaggregated wordcount.
+
+Good luck on your research paper. 
+
+--Andy
